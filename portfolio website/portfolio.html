@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio website</title>
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/about.css">
+
+</head>
+
+<body>
+
+  <div class="header">
+
+    <div class="nav-container">
+
+      <nav>
+
+        <div class="logo">
+          <h1><span style="color: #ff004f;">M</span>oiz.</h1>
+        </div>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-text">
+        <span>Web Developer</span>
+        <h1>Hi, I'm Abdul <span style="color: #ff004f;">Moiz</span> Khan <br> From Pakistan</h1>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="about">
+    <div class="about-info">
+      <div class="info-row">
+        <div class="info-about-col1">
+          <img src="images/user.png" alt="">
+        </div>
+        <div class="info-about-col2">
+          <h1>About Me</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis quas amet sint repellendus animi
+            voluptate voluptatem quaerat, qui voluptates cupiditate aperiam possimus sunt illum nesciunt numquam. Non
+            autem perferendis ullam.</p>
+
+          <div class="about-section">
+            <div class="about-section-link active-link" onclick="displayAboutInformation('skills');">Skills</div>
+            <div class="about-section-link" onclick="displayAboutInformation('experience');">Experience</div>
+            <div class="about-section-link" onclick="displayAboutInformation('education');">Education</div>
+          </div>
+
+          <div class="about-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Wep app</li>
+              <li><span>UI/UX</span><br>Designing Wep app</li>
+              <li><span>UI/UX</span><br>Designing Wep app</li>
+            </ul>
+
+            <div class="about-contents" id="experience">
+              <ul>
+                <li><span>UI/UX</span><br>Designing Wep app</li>
+                <li><span>UI/UX</span><br>Designing Wep app</li>
+                <li><span>UI/UX</span><br>Designing Wep app</li>
+              </ul>
+
+              <div class="about-contents" id="education">
+                <ul>
+                  <li><span>UI/UX</span><br>Designing Wep app</li>
+                  <li><span>UI/UX</span><br>Designing Wep app</li>
+                  <li><span>UI/UX</span><br>Designing Wep app</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+ 
+      <script>
+        let sectionLink = document.querySelector('.about-section-link');
+        let sectionContent = document.querySelector('.about-contents');
+
+        function displayAboutInformation(sectionName) {
+
+        }
+
+      </script>
+</body>
+
+</html>
